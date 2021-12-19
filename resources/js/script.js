@@ -34,6 +34,11 @@ function go() {
   }
 }
 
+function txtAnimated() {
+  $("#test").html("Aún no se puede acceder a la recuperación de contraseñas!");
+  $("#test").animate({ left: "100px", top: "100px" }, 500);
+}
+
 function cerrarSesion() {
   alert("Usted a cerrado sesión");
   window.location.href = "../../index.html";

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <title>Nuevos empleados</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">¿Desea ver los porductos que tenemos para usted?</a>
+        </div>
+    </nav>
+    <br>
+    <div class="container" align="center">
+        <h1>Formulario param nuevos Empleados</h1>
+        <div class="productTable">
+            <div class="card" style="width: 80%">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <form class="form" autocomplete="off" onsubmit="onFormSubmit()">
+                                <div class="mb-3">
+                                    <label for="fullName">Nombres</label>
+                                    <input type="text" name="fullName" id="fullName" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="empCode">Procedencia</label>
+                                    <input type="text" name="empCode" id="empCode" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="salary">Salario actual</label>
+                                    <input type="text" name="salary" id="salary" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="city">Ciudad</label>
+                                    <input type="text" name="city" id="city" />
+                                </div>
+                                <div class="form_action--button">
+                                    <input type="submit" class="btn btn-success" value="Guardar" />
+                                    <input type="reset" class="btn btn-secondary" value="Limpiar" />
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <table class="list table" id="employeeList">
+                                <thead>
+                                    <tr>
+                                        <th>Nombres</th>
+                                        <th>Procedencia</th>
+                                        <th>salario actual</th>
+                                        <th>Ciudad</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../resources/js/NewEmployee.js"></script>
+</body>
+
+</html>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../resources/css/Estilos.css">
-    <link rel="stylesheet" href="../resources/css/footer.css">
+    <link rel="stylesheet" href="../resources/css/alertify.css">
+    <link rel="stylesheet" href="../resources/css/alertify.min.css">
     <script src="../resources/js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Servisoft</title>
@@ -17,8 +19,9 @@
     <nav class="navbar">
         <a href="main.html">inicio</a>
         <a href="#speciality">Carta </a>
+        <a href="NewEmployee.html">Empleados</a>
         <a href="#order">Contacto</a>
-        <a href="../index.html">Iniciar Sesión</a>
+        <a href="../index.html">Login</a>
     </nav>
 </header>
 <section class="home" id="home">
@@ -98,14 +101,14 @@
     <div class="row">
         <form id="formularioLS">
             <div class="inputBox">
-                <input id="inpnom" type="text" placeholder="name">
-                <input id="inpema" type="email" placeholder="email">
+                <input id="inpnom" type="text" placeholder="name" required>
+                <input id="inpema" type="email" placeholder="email" required>
             </div>
             <div class="inputBox">
-                <input id="inpnum" type="text" placeholder="number">
-                <input id="inpfona" type="text" placeholder="food name">
+                <input id="inpnum" type="text" placeholder="number" required>
+                <input id="inpfona" type="text" placeholder="food name" required>
             </div>
-            <textarea placeholder="address" id="inpadr" cols="30" rows="10"></textarea>
+            <textarea placeholder="address" id="inpadr" cols="30" rows="10" required></textarea>
             <button id="boton-guardar" value="order now" class="btn">Ordenar ahora</button>
         </form>
     </div>
@@ -120,13 +123,15 @@
             </div>
         </div>
         <div class="col-md-12 text-center">
-            <p class="copyright">Elaborado por: 
-                <i class="ion-ios-heart" aria-hidden="true" /> 
+            <p class="copyright">Elaborado por:
+                <i class="ion-ios-heart" aria-hidden="true" />
                 <a href="https://github.com/Jesusf2003" target="_blank">Fernando Canales</a> | 2021
             </p>
         </div>
     </div>
-    </footer>
+</footer>
 <script src="../resources/js/localstorage.js"></script>
+<script src="../resources/js/alertify.min.js"></script>
 </body>
+
 </html>
